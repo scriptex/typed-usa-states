@@ -1,5 +1,7 @@
 // https://github.com/jakevdp/data-USstates/blob/master/state-areas.csv
 // https://github.com/jakevdp/data-USstates/blob/master/state-population.csv
+// simple : name, abbr, capital, zip
+// extended: territory, contiguous, area, population
 
 export interface IUSAStatePopulation {
     year: number;
