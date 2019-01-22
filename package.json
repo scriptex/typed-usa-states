@@ -1,0 +1,24 @@
+{
+	"name": "typed-usa-states",
+	"version": "0.0.1",
+	"description": "typed-usa-states",
+	"scripts": {},
+	"keywords": [
+		"Typed",
+		"USA",
+		"states",
+		"TypeScript",
+		"typings",
+		"definition"
+	],
+	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
+	"repository": "https://github.com/scriptex/typed-usa-states",
+	"bugs": {
+		"url": "https://github.com/scriptex/typed-usa-states/issues",
+		"email": "scriptex.bg@gmail.com"
+	},
+	"license": "MIT",
+	"dependencies": {},
+	"devDependencies": {},
+	"main": "index.ts"
+}
