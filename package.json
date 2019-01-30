@@ -1,18 +1,15 @@
 {
 	"name": "typed-usa-states",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "An array of geographical data for all USA states with full TypeScript support",
 	"scripts": {
-		"build": "./node_modules/.bin/tsc -p .",
+		"build": "tsc -p .",
 		"lint": "tslint -p tsconfig.json -c tslint.json index.ts"
 	},
 	"keywords": [
-		"Typed",
-		"USA",
-		"states",
-		"TypeScript",
-		"typings",
-		"definition"
+		"USA States",
+		"Geographical Data",
+		"TypeScript"
 	],
 	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
 	"repository": "https://github.com/scriptex/typed-usa-states",
@@ -23,9 +20,10 @@
 	"license": "MIT",
 	"dependencies": {},
 	"devDependencies": {
-		"tslint": "^5.12.1",
-		"tslint-config-prettier": "^1.17.0",
-		"typescript": "^3.2.4"
+		"tslint": "5.12.1",
+		"tslint-config-prettier": "1.17.0",
+		"typescript": "3.2.4"
 	},
-	"main": "index.ts"
+	"main": "dist/index.js",
+	"typings": "dist/index.d.ts"
 }
