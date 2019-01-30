@@ -1,8 +1,11 @@
 {
 	"name": "typed-usa-states",
 	"version": "0.0.1",
-	"description": "typed-usa-states",
-	"scripts": {},
+	"description": "An array of geographical data for all USA states with full TypeScript support",
+	"scripts": {
+		"build": "./node_modules/.bin/tsc -p .",
+		"lint": "tslint -p tsconfig.json -c tslint.json index.ts"
+	},
 	"keywords": [
 		"Typed",
 		"USA",
@@ -19,6 +22,10 @@
 	},
 	"license": "MIT",
 	"dependencies": {},
-	"devDependencies": {},
+	"devDependencies": {
+		"tslint": "^5.12.1",
+		"tslint-config-prettier": "^1.17.0",
+		"typescript": "^3.2.4"
+	},
 	"main": "index.ts"
 }
