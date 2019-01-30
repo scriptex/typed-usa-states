@@ -1,4 +1,11 @@
-// https://github.com/jakevdp/data-USstates/blob/master/state-population.csv
+export type IUSAZipCode = number;
+
+export type IUSAZipCodeRange = [IUSAZipCode, IUSAZipCode];
+
+export interface IUSAStateArea {
+	year: number;
+	value: number; // in square miles
+}
 
 export interface IUSAStatePopulation {
     year: number;
@@ -11,8 +18,8 @@ export interface IUSAState {
 	territory: boolean;
 	capital: string;
 	contiguous: boolean;
-    zipCodes: number[][]; // array of arrays of starting zipcode and ending zipcode
-    area: number; // in square miles as of Jan 2019
+    zipCodes: IUSAZipCodeRange[];
+    area: IUSAStateArea;
     population: IUSAStatePopulation;
 }
 
@@ -24,10 +31,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Montgomery',
 		contiguous: true,
         zipCodes: [[35801, 35816]],
-        area: 52419,
+        area: {
+			year: 2019,
+			value: 52419
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 4875000
         }
 	},
 	{
@@ -37,10 +47,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Juneau',
 		contiguous: false,
         zipCodes: [[99501, 99524]],
-        area: 663300,
+        area: {
+			year: 2019,
+			value: 663300
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 739795
         }
 	},
 	{
@@ -50,10 +63,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Pago Pago',
 		contiguous: false,
         zipCodes: [[96799, 96799]],
-        area: 76.83,
+        area: {
+			year: 2019,
+			value: 76.83
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 55641
         }
 	},
 	{
@@ -63,10 +79,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Phoenix',
 		contiguous: true,
         zipCodes: [[85001, 85055]],
-        area: 113998,
+        area: {
+			year: 2019,
+			value: 113998
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 7016000
         }
 	},
 	{
@@ -76,10 +95,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Little Rock',
 		contiguous: true,
         zipCodes: [[72201, 72217]],
-        area: 53179,
+        area: {
+			year: 2019,
+			value: 53179
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 3004000
         }
 	},
 	{
@@ -89,10 +111,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Sacramento',
 		contiguous: true,
         zipCodes: [[94203, 94209], [90001, 90089], [90209, 90213]],
-        area: 163696,
+        area: {
+			year: 2019,
+			value: 163696
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 39540000
         }
 	},
 	{
@@ -102,10 +127,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Denver',
 		contiguous: true,
         zipCodes: [[80201, 80239]],
-        area: 104185,
+        area: {
+			year: 2019,
+			value: 104185
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 5607000
         }
 	},
 	{
@@ -115,10 +143,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Hartford',
 		contiguous: true,
         zipCodes: [[06101, 06112]],
-        area: 5543.3,
+        area: {
+			year: 2019,
+			value: 5543.3
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 3588000
         }
 	},
 	{
@@ -128,10 +159,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Dover',
 		contiguous: true,
         zipCodes: [[19901, 19905]],
-        area: 1981,
+        area: {
+			year: 2019,
+			value: 1981
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 961939
         }
 	},
 	{
@@ -141,10 +175,13 @@ export const usaStates: IUSAState[] = [
 		capital: '',
 		contiguous: true,
         zipCodes: [[20001, 20020]],
-        area: 68.34,
+        area: {
+			year: 2019,
+			value: 68.34
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 693972
         }
 	},
 	{
@@ -154,10 +191,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Palikir',
 		contiguous: false,
         zipCodes: [[96941, 96944]],
-        area: 271,
+        area: {
+			year: 2019,
+			value: 271
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 105544
         }
 	},
 	{
@@ -167,10 +207,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Tallahassee',
 		contiguous: true,
         zipCodes: [[32501, 32509], [33124, 33190], [32801, 32837]],
-        area: 65755,
+        area: {
+			year: 2019,
+			value: 65755
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 20980000
         }
 	},
 	{
@@ -180,10 +223,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Atlanta',
 		contiguous: true,
         zipCodes: [[30301, 30381]],
-        area: 59425,
+        area: {
+			year: 2019,
+			value: 59425
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 3717000
         }
 	},
 	{
@@ -193,10 +239,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Hagåtña',
 		contiguous: false,
         zipCodes: [[96910, 96932]],
-        area: 210,
+        area: {
+			year: 2019,
+			value: 210
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 164229
         }
 	},
 	{
@@ -206,10 +255,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Honolulu',
 		contiguous: false,
         zipCodes: [[96801, 96830]],
-        area: 10931,
+        area: {
+			year: 2019,
+			value: 10931
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 1428000
         }
 	},
 	{
@@ -219,10 +271,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Boise',
 		contiguous: true,
         zipCodes: [[83254, 83254]],
-        area: 83642.1,
+        area: {
+			year: 2019,
+			value: 83642.1
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 1717000
         }
 	},
 	{
@@ -232,10 +287,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Springfield',
 		contiguous: true,
         zipCodes: [[60601, 60641], [62701, 62709]],
-        area: 57914.6,
+        area: {
+			year: 2019,
+			value: 57914.6
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 12800000
         }
 	},
 	{
@@ -245,10 +303,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Indianapolis',
 		contiguous: true,
         zipCodes: [[46201, 46209]],
-        area: 36418,
+        area: {
+			year: 2019,
+			value: 36418
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 6667000
         }
 	},
 	{
@@ -258,10 +319,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Des Moines',
 		contiguous: true,
         zipCodes: [[52801, 52809], [50301, 50323]],
-        area: 56272.8,
+        area: {
+			year: 2019,
+			value: 56272.8
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 3146000
         }
 	},
 	{
@@ -271,10 +335,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Topeka',
 		contiguous: true,
         zipCodes: [[67201, 67221]],
-        area: 82278,
+        area: {
+			year: 2019,
+			value: 82278
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 2913000
         }
 	},
 	{
@@ -284,10 +351,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Frankfort',
 		contiguous: true,
         zipCodes: [[41701, 41702]],
-        area: 40409.1,
+        area: {
+			year: 2019,
+			value: 40409.1
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 4454000
         }
 	},
 	{
@@ -297,10 +367,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Baton Rouge',
 		contiguous: true,
         zipCodes: [[70112, 70119]],
-        area: 52377.8,
+        area: {
+			year: 2019,
+			value: 52377.8
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 4684000
         }
 	},
 	{
@@ -310,10 +383,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Augusta',
 		contiguous: true,
         zipCodes: [[04032, 04034]],
-        area: 35385,
+        area: {
+			year: 2019,
+			value: 35385
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 1336000
         }
 	},
 	{
@@ -323,10 +399,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Majuro',
 		contiguous: false,
         zipCodes: [[96960, 96960], [96970, 96970]],
-        area: 70,
+        area: {
+			year: 2019,
+			value: 70
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 53127
         }
 	},
 	{
@@ -336,10 +415,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Annapolis',
 		contiguous: true,
         zipCodes: [[21201, 21237]],
-        area: 12407,
+        area: {
+			year: 2019,
+			value: 12407
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 6052000
         }
 	},
 	{
@@ -349,10 +431,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Boston',
 		contiguous: true,
         zipCodes: [[02101, 02137]],
-        area: 10565,
+        area: {
+			year: 2019,
+			value: 10565
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 6860000
         }
 	},
 	{
@@ -362,10 +447,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Lansing',
 		contiguous: true,
         zipCodes: [[49036, 49036], [49734, 49735]],
-        area: 96715.9,
+        area: {
+			year: 2019,
+			value: 96715.9
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 9962000
         }
 	},
 	{
@@ -375,10 +463,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Saint Paul',
 		contiguous: true,
         zipCodes: [[55801, 55808]],
-        area: 86942.9,
+        area: {
+			year: 2019,
+			value: 86942.9
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 5577000
         }
 	},
 	{
@@ -388,10 +479,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Jackson',
 		contiguous: true,
         zipCodes: [[39530, 39535]],
-        area: 48430,
+        area: {
+			year: 2019,
+			value: 48430
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 2984000
         }
 	},
 	{
@@ -401,10 +495,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Jefferson City',
 		contiguous: true,
         zipCodes: [[63101, 63141]],
-        area: 69715,
+        area: {
+			year: 2019,
+			value: 69715
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 6114000
         }
 	},
 	{
@@ -414,10 +511,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Helena',
 		contiguous: true,
         zipCodes: [[59044, 59044]],
-        area: 147040,
+        area: {
+			year: 2019,
+			value: 147040
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 1050000
         }
 	},
 	{
@@ -427,10 +527,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Lincoln',
 		contiguous: true,
         zipCodes: [[68901, 68902]],
-        area: 77358,
+        area: {
+			year: 2019,
+			value: 77358
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 1920000
         }
 	},
 	{
@@ -440,10 +543,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Carson City',
 		contiguous: true,
         zipCodes: [[89501, 89513]],
-        area: 110567,
+        area: {
+			year: 2019,
+			value: 110567
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 2998000
         }
 	},
 	{
@@ -453,10 +559,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Concord',
 		contiguous: true,
         zipCodes: [[03217, 03217]],
-        area: 9349,
+        area: {
+			year: 2019,
+			value: 9349
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 1343000
         }
 	},
 	{
@@ -466,10 +575,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Trenton',
 		contiguous: true,
         zipCodes: [[07039, 07039]],
-        area: 8722.6,
+        area: {
+			year: 2019,
+			value: 8722.6
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 9006000
         }
 	},
 	{
@@ -479,10 +591,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Santa Fe',
 		contiguous: true,
         zipCodes: [[87500, 87506]],
-        area: 121697,
+        area: {
+			year: 2019,
+			value: 121697
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 2088000
         }
 	},
 	{
@@ -492,10 +607,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Albany',
 		contiguous: true,
         zipCodes: [[10001, 10048]],
-        area: 54555,
+        area: {
+			year: 2019,
+			value: 54555
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 8623000
         }
 	},
 	{
@@ -505,10 +623,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Raleigh',
 		contiguous: true,
         zipCodes: [[27565, 27565]],
-        area: 53818.8,
+        area: {
+			year: 2019,
+			value: 53818.8
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 10270000
         }
 	},
 	{
@@ -518,10 +639,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Bismarck',
 		contiguous: true,
         zipCodes: [[58282, 58282]],
-        area: 70762,
+        area: {
+			year: 2019,
+			value: 70762
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 755393
         }
 	},
 	{
@@ -531,10 +655,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Saipan',
 		contiguous: false,
         zipCodes: [[96950, 96950]],
-        area: 179,
+        area: {
+			year: 2019,
+			value: 179
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 55144
         }
 	},
 	{
@@ -544,10 +671,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Columbus',
 		contiguous: true,
         zipCodes: [[44101, 44179]],
-        area: 44825,
+        area: {
+			year: 2019,
+			value: 44825
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 11660000
         }
 	},
 	{
@@ -557,10 +687,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Oklahoma City',
 		contiguous: true,
         zipCodes: [[74101, 74110]],
-        area: 69959.8,
+        area: {
+			year: 2019,
+			value: 69959.8
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 3931000
         }
 	},
 	{
@@ -570,10 +703,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Salem',
 		contiguous: true,
         zipCodes: [[97201, 97225]],
-        area: 98466.1,
+        area: {
+			year: 2019,
+			value: 98466.1
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 4143000
         }
 	},
 	{
@@ -583,10 +719,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Ngerulmud',
 		contiguous: false,
         zipCodes: [[96939, 96940]],
-        area: 177.2,
+        area: {
+			year: 2019,
+			value: 177.2
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 21729
         }
 	},
 	{
@@ -596,10 +735,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Harrisburg',
 		contiguous: true,
         zipCodes: [[15201, 15244]],
-        area: 46055.4,
+        area: {
+			year: 2019,
+			value: 46055.4
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 12810000
         }
 	},
 	{
@@ -609,10 +751,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'San Juan',
 		contiguous: false,
         zipCodes: [[00600, 00799], [00900, 00999]],
-        area: 3515,
+        area: {
+			year: 2019,
+			value: 3515
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 3337000
         }
 	},
 	{
@@ -622,10 +767,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Providence',
 		contiguous: true,
         zipCodes: [[02840, 02841]],
-        area: 1212,
+        area: {
+			year: 2019,
+			value: 1212
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 1060000
         }
 	},
 	{
@@ -635,10 +783,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Columbia',
 		contiguous: true,
         zipCodes: [[29020, 29020]],
-        area: 32020,
+        area: {
+			year: 2019,
+			value: 32020
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 5024000
         }
 	},
 	{
@@ -648,10 +799,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Pierre',
 		contiguous: true,
         zipCodes: [[57401, 57402]],
-        area: 77116,
+        area: {
+			year: 2019,
+			value: 77116
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 896666
         }
 	},
 	{
@@ -661,10 +815,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Nashville',
 		contiguous: true,
         zipCodes: [[37201, 37222]],
-        area: 42143,
+        area: {
+			year: 2019,
+			value: 42143
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 6716000
         }
 	},
 	{
@@ -674,10 +831,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Austin',
 		contiguous: true,
         zipCodes: [[78701, 78705]],
-        area: 268597,
+        area: {
+			year: 2019,
+			value: 268597
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 28300000
         }
 	},
 	{
@@ -687,10 +847,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Salt Lake City',
 		contiguous: true,
         zipCodes: [[84321, 84323]],
-        area: 84898.8,
+        area: {
+			year: 2019,
+			value: 84898.8
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 3102000
         }
 	},
 	{
@@ -700,10 +863,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Montpelier',
 		contiguous: true,
         zipCodes: [[05751, 05751]],
-        area: 9616,
+        area: {
+			year: 2019,
+			value: 9616
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 623657
         }
 	},
 	{
@@ -713,10 +879,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Charlotte Amalie',
 		contiguous: false,
         zipCodes: [[00801, 00804]],
-        area: 133.7,
+        area: {
+			year: 2019,
+			value: 133.7
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 107268
         }
 	},
 	{
@@ -726,10 +895,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Richmond',
 		contiguous: true,
         zipCodes: [[24517, 24517]],
-        area: 42774.6,
+        area: {
+			year: 2019,
+			value: 42774.6
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 8470000
         }
 	},
 	{
@@ -739,10 +911,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Olympia',
 		contiguous: true,
         zipCodes: [[98004, 98009]],
-        area: 71362,
+        area: {
+			year: 2019,
+			value: 71362
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 7406000
         }
 	},
 	{
@@ -752,10 +927,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Charleston',
 		contiguous: true,
         zipCodes: [[25813, 25813]],
-        area: 24038,
+        area: {
+			year: 2019,
+			value: 24038
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 1816000
         }
 	},
 	{
@@ -765,10 +943,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Madison',
 		contiguous: true,
         zipCodes: [[53201, 53228]],
-        area: 65498,
+        area: {
+			year: 2019,
+			value: 65498
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 5795000
         }
 	},
 	{
@@ -778,10 +959,13 @@ export const usaStates: IUSAState[] = [
 		capital: 'Cheyenne',
 		contiguous: true,
         zipCodes: [[82941, 82941]],
-        area: 97914,
+        area: {
+			year: 2019,
+			value: 97914
+		},
         population: {
-            year: 2018,
-            count: 0
+            year: 2017,
+            count: 579315
         }
 	}
 ];
