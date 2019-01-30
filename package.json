@@ -1,6 +1,6 @@
 {
 	"name": "typed-usa-states",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "An array of geographical data for all USA states with full TypeScript support",
 	"scripts": {
 		"build": "tsc -p .",
