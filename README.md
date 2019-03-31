@@ -1,3 +1,9 @@
+[![GitHub release](https://img.shields.io/github/release/scriptex/typed-usa-states.svg)](https://github.com/scriptex/typed-usa-states/releases/latest)
+[![GitHub issues](https://img.shields.io/github/issues/scriptex/typed-usa-states.svg)](https://github.com/scriptex/typed-usa-states/issues)
+[![GitHub last commit](https://img.shields.io/github/last-commit/scriptex/typed-usa-states.svg)](https://github.com/scriptex/typed-usa-states/commits/master)
+[![Build Status](https://travis-ci.org/scriptex/typed-usa-states.svg?branch=master)](https://travis-ci.org/scriptex/typed-usa-states)
+[![npm](https://img.shields.io/npm/dt/typed-usa-states.svg)](https://www.npmjs.com/package/typed-usa-states)
+[![npm](https://img.shields.io/npm/v/typed-usa-states.svg)](https://www.npmjs.com/package/typed-usa-states)
 [![Analytics](https://ga-beacon.appspot.com/UA-83446952-1/github.com/scriptex/typed-usa-states/README.md)](https://github.com/scriptex/typed-usa-states/)
 
 # Typed USA States
