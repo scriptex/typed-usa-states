@@ -41,5 +41,7 @@ tslint.json
 ts-config.json
 postcss.config.js
 webpack.config.js
+_config.yml
+_.config.yml
 
 # Project specific
