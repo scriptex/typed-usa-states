@@ -22,7 +22,7 @@
 	"devDependencies": {
 		"tslint": "5.15.0",
 		"tslint-config-prettier": "1.18.0",
-		"typescript": "3.4.2"
+		"typescript": "3.4.3"
 	},
 	"main": "dist/index.js",
 	"typings": "dist/index.d.ts"
