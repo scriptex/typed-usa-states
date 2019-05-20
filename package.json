@@ -1,19 +1,19 @@
 {
 	"name": "typed-usa-states",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "An array of geographical data for all USA states with full TypeScript support",
 	"scripts": {
 		"build": "tsc -p .",
 		"lint": "tslint -p tsconfig.json -c tslint.json index.ts"
 	},
 	"keywords": [
-                "USA",
-                "States Array",
+		"USA",
+		"States Array",
 		"USA States",
 		"USA States TypeScript",
-                "USA States Array",
-                "USA States JavaScript",
-                "Geographical Data"
+		"USA States Array",
+		"USA States JavaScript",
+		"Geographical Data"
 	],
 	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
 	"repository": "https://github.com/scriptex/typed-usa-states",
