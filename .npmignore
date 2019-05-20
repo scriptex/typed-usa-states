@@ -36,6 +36,7 @@ yarn.lock
 
 # Config files
 .babelrc
+.whitesource
 renovate.json
 tslint.json
 ts-config.json
