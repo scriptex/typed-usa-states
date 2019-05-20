@@ -7,9 +7,13 @@
 		"lint": "tslint -p tsconfig.json -c tslint.json index.ts"
 	},
 	"keywords": [
+                "USA",
+                "States Array",
 		"USA States",
-		"Geographical Data",
-		"TypeScript"
+		"USA States TypeScript",
+                "USA States Array",
+                "USA States JavaScript",
+                "Geographical Data"
 	],
 	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
 	"repository": "https://github.com/scriptex/typed-usa-states",
