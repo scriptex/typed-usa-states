@@ -36,8 +36,8 @@ export const usaStates: IUSAState[] = [
 			value: 52419
 		},
 		population: {
-			year: 2017,
-			count: 4875000
+			year: 2018,
+			count: 4887871
 		}
 	},
 	{
@@ -52,8 +52,8 @@ export const usaStates: IUSAState[] = [
 			value: 663300
 		},
 		population: {
-			year: 2017,
-			count: 739795
+			year: 2018,
+			count: 737438
 		}
 	},
 	{
@@ -68,7 +68,7 @@ export const usaStates: IUSAState[] = [
 			value: 76.83
 		},
 		population: {
-			year: 2017,
+			year: 2018,
 			count: 55641
 		}
 	},
@@ -84,8 +84,8 @@ export const usaStates: IUSAState[] = [
 			value: 113998
 		},
 		population: {
-			year: 2017,
-			count: 7016000
+			year: 2018,
+			count: 7171646
 		}
 	},
 	{
@@ -100,8 +100,8 @@ export const usaStates: IUSAState[] = [
 			value: 53179
 		},
 		population: {
-			year: 2017,
-			count: 3004000
+			year: 2018,
+			count: 3013825
 		}
 	},
 	{
@@ -116,8 +116,8 @@ export const usaStates: IUSAState[] = [
 			value: 163696
 		},
 		population: {
-			year: 2017,
-			count: 39540000
+			year: 2018,
+			count: 39557045
 		}
 	},
 	{
@@ -132,8 +132,8 @@ export const usaStates: IUSAState[] = [
 			value: 104185
 		},
 		population: {
-			year: 2017,
-			count: 5607000
+			year: 2018,
+			count: 5695564
 		}
 	},
 	{
@@ -148,8 +148,8 @@ export const usaStates: IUSAState[] = [
 			value: 5543.3
 		},
 		population: {
-			year: 2017,
-			count: 3588000
+			year: 2018,
+			count: 3572665
 		}
 	},
 	{
@@ -164,8 +164,8 @@ export const usaStates: IUSAState[] = [
 			value: 1981
 		},
 		population: {
-			year: 2017,
-			count: 961939
+			year: 2018,
+			count: 967171
 		}
 	},
 	{
@@ -180,8 +180,8 @@ export const usaStates: IUSAState[] = [
 			value: 68.34
 		},
 		population: {
-			year: 2017,
-			count: 693972
+			year: 2018,
+			count: 702455
 		}
 	},
 	{
@@ -196,8 +196,8 @@ export const usaStates: IUSAState[] = [
 			value: 271
 		},
 		population: {
-			year: 2017,
-			count: 105544
+			year: 2018,
+			count: 114079
 		}
 	},
 	{
@@ -212,8 +212,8 @@ export const usaStates: IUSAState[] = [
 			value: 65755
 		},
 		population: {
-			year: 2017,
-			count: 20980000
+			year: 2018,
+			count: 21299325
 		}
 	},
 	{
@@ -228,8 +228,8 @@ export const usaStates: IUSAState[] = [
 			value: 59425
 		},
 		population: {
-			year: 2017,
-			count: 3717000
+			year: 2018,
+			count: 10519475
 		}
 	},
 	{
@@ -244,8 +244,8 @@ export const usaStates: IUSAState[] = [
 			value: 210
 		},
 		population: {
-			year: 2017,
-			count: 164229
+			year: 2018,
+			count: 165718
 		}
 	},
 	{
@@ -260,8 +260,8 @@ export const usaStates: IUSAState[] = [
 			value: 10931
 		},
 		population: {
-			year: 2017,
-			count: 1428000
+			year: 2018,
+			count: 1420491
 		}
 	},
 	{
@@ -276,8 +276,8 @@ export const usaStates: IUSAState[] = [
 			value: 83642.1
 		},
 		population: {
-			year: 2017,
-			count: 1717000
+			year: 2018,
+			count: 1754208
 		}
 	},
 	{
@@ -292,8 +292,8 @@ export const usaStates: IUSAState[] = [
 			value: 57914.6
 		},
 		population: {
-			year: 2017,
-			count: 12800000
+			year: 2018,
+			count: 12741080
 		}
 	},
 	{
@@ -308,8 +308,8 @@ export const usaStates: IUSAState[] = [
 			value: 36418
 		},
 		population: {
-			year: 2017,
-			count: 6667000
+			year: 2018,
+			count: 6691878
 		}
 	},
 	{
@@ -324,8 +324,8 @@ export const usaStates: IUSAState[] = [
 			value: 56272.8
 		},
 		population: {
-			year: 2017,
-			count: 3146000
+			year: 2018,
+			count: 3156145
 		}
 	},
 	{
@@ -340,8 +340,8 @@ export const usaStates: IUSAState[] = [
 			value: 82278
 		},
 		population: {
-			year: 2017,
-			count: 2913000
+			year: 2018,
+			count: 2911505
 		}
 	},
 	{
@@ -356,8 +356,8 @@ export const usaStates: IUSAState[] = [
 			value: 40409.1
 		},
 		population: {
-			year: 2017,
-			count: 4454000
+			year: 2018,
+			count: 4468402
 		}
 	},
 	{
@@ -372,8 +372,8 @@ export const usaStates: IUSAState[] = [
 			value: 52377.8
 		},
 		population: {
-			year: 2017,
-			count: 4684000
+			year: 2018,
+			count: 4659978
 		}
 	},
 	{
@@ -388,8 +388,8 @@ export const usaStates: IUSAState[] = [
 			value: 35385
 		},
 		population: {
-			year: 2017,
-			count: 1336000
+			year: 2018,
+			count: 1338404
 		}
 	},
 	{
@@ -404,8 +404,8 @@ export const usaStates: IUSAState[] = [
 			value: 70
 		},
 		population: {
-			year: 2017,
-			count: 53127
+			year: 2018,
+			count: 58791
 		}
 	},
 	{
@@ -420,8 +420,8 @@ export const usaStates: IUSAState[] = [
 			value: 12407
 		},
 		population: {
-			year: 2017,
-			count: 6052000
+			year: 2018,
+			count: 6042718
 		}
 	},
 	{
@@ -436,8 +436,8 @@ export const usaStates: IUSAState[] = [
 			value: 10565
 		},
 		population: {
-			year: 2017,
-			count: 6860000
+			year: 2018,
+			count: 6902149
 		}
 	},
 	{
@@ -452,8 +452,8 @@ export const usaStates: IUSAState[] = [
 			value: 96715.9
 		},
 		population: {
-			year: 2017,
-			count: 9962000
+			year: 2018,
+			count: 9995915
 		}
 	},
 	{
@@ -468,8 +468,8 @@ export const usaStates: IUSAState[] = [
 			value: 86942.9
 		},
 		population: {
-			year: 2017,
-			count: 5577000
+			year: 2018,
+			count: 5611179
 		}
 	},
 	{
@@ -484,8 +484,8 @@ export const usaStates: IUSAState[] = [
 			value: 48430
 		},
 		population: {
-			year: 2017,
-			count: 2984000
+			year: 2018,
+			count: 2986530
 		}
 	},
 	{
@@ -500,8 +500,8 @@ export const usaStates: IUSAState[] = [
 			value: 69715
 		},
 		population: {
-			year: 2017,
-			count: 6114000
+			year: 2018,
+			count: 6126452
 		}
 	},
 	{
@@ -516,8 +516,8 @@ export const usaStates: IUSAState[] = [
 			value: 147040
 		},
 		population: {
-			year: 2017,
-			count: 1050000
+			year: 2018,
+			count: 1062305
 		}
 	},
 	{
@@ -532,8 +532,8 @@ export const usaStates: IUSAState[] = [
 			value: 77358
 		},
 		population: {
-			year: 2017,
-			count: 1920000
+			year: 2018,
+			count: 1929268
 		}
 	},
 	{
@@ -548,8 +548,8 @@ export const usaStates: IUSAState[] = [
 			value: 110567
 		},
 		population: {
-			year: 2017,
-			count: 2998000
+			year: 2018,
+			count: 3034392
 		}
 	},
 	{
@@ -564,8 +564,8 @@ export const usaStates: IUSAState[] = [
 			value: 9349
 		},
 		population: {
-			year: 2017,
-			count: 1343000
+			year: 2018,
+			count: 1356458
 		}
 	},
 	{
@@ -580,8 +580,8 @@ export const usaStates: IUSAState[] = [
 			value: 8722.6
 		},
 		population: {
-			year: 2017,
-			count: 9006000
+			year: 2018,
+			count: 8908520
 		}
 	},
 	{
@@ -596,8 +596,8 @@ export const usaStates: IUSAState[] = [
 			value: 121697
 		},
 		population: {
-			year: 2017,
-			count: 2088000
+			year: 2018,
+			count: 2095428
 		}
 	},
 	{
@@ -612,8 +612,8 @@ export const usaStates: IUSAState[] = [
 			value: 54555
 		},
 		population: {
-			year: 2017,
-			count: 8623000
+			year: 2018,
+			count: 19542209
 		}
 	},
 	{
@@ -628,8 +628,8 @@ export const usaStates: IUSAState[] = [
 			value: 53818.8
 		},
 		population: {
-			year: 2017,
-			count: 10270000
+			year: 2018,
+			count: 10383620
 		}
 	},
 	{
@@ -644,8 +644,8 @@ export const usaStates: IUSAState[] = [
 			value: 70762
 		},
 		population: {
-			year: 2017,
-			count: 755393
+			year: 2018,
+			count: 760077
 		}
 	},
 	{
@@ -660,8 +660,8 @@ export const usaStates: IUSAState[] = [
 			value: 179
 		},
 		population: {
-			year: 2017,
-			count: 55144
+			year: 2018,
+			count: 55194
 		}
 	},
 	{
@@ -676,8 +676,8 @@ export const usaStates: IUSAState[] = [
 			value: 44825
 		},
 		population: {
-			year: 2017,
-			count: 11660000
+			year: 2018,
+			count: 11689442
 		}
 	},
 	{
@@ -692,8 +692,8 @@ export const usaStates: IUSAState[] = [
 			value: 69959.8
 		},
 		population: {
-			year: 2017,
-			count: 3931000
+			year: 2018,
+			count: 3943079
 		}
 	},
 	{
@@ -708,8 +708,8 @@ export const usaStates: IUSAState[] = [
 			value: 98466.1
 		},
 		population: {
-			year: 2017,
-			count: 4143000
+			year: 2018,
+			count: 4190713
 		}
 	},
 	{
@@ -724,8 +724,8 @@ export const usaStates: IUSAState[] = [
 			value: 177.2
 		},
 		population: {
-			year: 2017,
-			count: 21729
+			year: 2018,
+			count: 21503
 		}
 	},
 	{
@@ -740,8 +740,8 @@ export const usaStates: IUSAState[] = [
 			value: 46055.4
 		},
 		population: {
-			year: 2017,
-			count: 12810000
+			year: 2018,
+			count: 12807060
 		}
 	},
 	{
@@ -756,8 +756,8 @@ export const usaStates: IUSAState[] = [
 			value: 3515
 		},
 		population: {
-			year: 2017,
-			count: 3337000
+			year: 2018,
+			count: 3195153
 		}
 	},
 	{
@@ -772,8 +772,8 @@ export const usaStates: IUSAState[] = [
 			value: 1212
 		},
 		population: {
-			year: 2017,
-			count: 1060000
+			year: 2018,
+			count: 1057315
 		}
 	},
 	{
@@ -788,8 +788,8 @@ export const usaStates: IUSAState[] = [
 			value: 32020
 		},
 		population: {
-			year: 2017,
-			count: 5024000
+			year: 2018,
+			count: 5084127
 		}
 	},
 	{
@@ -804,8 +804,8 @@ export const usaStates: IUSAState[] = [
 			value: 77116
 		},
 		population: {
-			year: 2017,
-			count: 896666
+			year: 2018,
+			count: 882235
 		}
 	},
 	{
@@ -820,8 +820,8 @@ export const usaStates: IUSAState[] = [
 			value: 42143
 		},
 		population: {
-			year: 2017,
-			count: 6716000
+			year: 2018,
+			count: 6770010
 		}
 	},
 	{
@@ -836,8 +836,8 @@ export const usaStates: IUSAState[] = [
 			value: 268597
 		},
 		population: {
-			year: 2017,
-			count: 28300000
+			year: 2018,
+			count: 28701845
 		}
 	},
 	{
@@ -852,8 +852,8 @@ export const usaStates: IUSAState[] = [
 			value: 84898.8
 		},
 		population: {
-			year: 2017,
-			count: 3102000
+			year: 2018,
+			count: 3161105
 		}
 	},
 	{
@@ -868,8 +868,8 @@ export const usaStates: IUSAState[] = [
 			value: 9616
 		},
 		population: {
-			year: 2017,
-			count: 623657
+			year: 2018,
+			count: 626299
 		}
 	},
 	{
@@ -884,8 +884,8 @@ export const usaStates: IUSAState[] = [
 			value: 133.7
 		},
 		population: {
-			year: 2017,
-			count: 107268
+			year: 2018,
+			count: 104914
 		}
 	},
 	{
@@ -900,8 +900,8 @@ export const usaStates: IUSAState[] = [
 			value: 42774.6
 		},
 		population: {
-			year: 2017,
-			count: 8470000
+			year: 2018,
+			count: 8517685
 		}
 	},
 	{
@@ -916,8 +916,8 @@ export const usaStates: IUSAState[] = [
 			value: 71362
 		},
 		population: {
-			year: 2017,
-			count: 7406000
+			year: 2018,
+			count: 7535591
 		}
 	},
 	{
@@ -932,8 +932,8 @@ export const usaStates: IUSAState[] = [
 			value: 24038
 		},
 		population: {
-			year: 2017,
-			count: 1816000
+			year: 2018,
+			count: 1805832
 		}
 	},
 	{
@@ -948,8 +948,8 @@ export const usaStates: IUSAState[] = [
 			value: 65498
 		},
 		population: {
-			year: 2017,
-			count: 5795000
+			year: 2018,
+			count: 5813568
 		}
 	},
 	{
@@ -964,8 +964,8 @@ export const usaStates: IUSAState[] = [
 			value: 97914
 		},
 		population: {
-			year: 2017,
-			count: 579315
+			year: 2018,
+			count: 577737
 		}
 	}
 ];
