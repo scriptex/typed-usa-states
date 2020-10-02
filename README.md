@@ -19,13 +19,14 @@ This package contains geographical data for all USA states including:
 -   `territory`: whether the state is under the sovereign jurisdiction of the federal government of the United States
 -   the `capital` city of the state
 -   `contiguous`: whether the state shares common borders with other states
--   `zipCodes`: an array containing string arrays. Each array contains two elements (string) - the start and the end of the zip code range. (The `string` type is used because TypeScript does not like numbers with leading zero. Pull request are welcome if you find a workaround for this issue.) 
+-   `zipCodes`: an array containing string arrays. Each array contains two elements (string) - the start and the end of the zip code range. (The `string` type is used because TypeScript does not like numbers with leading zero. Pull request are welcome if you find a workaround for this issue.)
 -   `area`: the area of the state in square miles in the following format:
     -   `year`: when was the value last updated
     -   `value`: the actual area
 -   `population`: the population of the state in the following format:
     -   `year`: when was the value last updated
     -   `count`: the actual population
+-   `counties` of the state
 
 ## Usage
 
