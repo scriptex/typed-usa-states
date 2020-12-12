@@ -642,7 +642,8 @@ export const usaStates: IUSAState[] = [
 			count: 10519475
 		},
 		counties: [
-			'Appling CountyAtkinson County',
+			'Appling County',
+			'Atkinson County',
 			'Bacon County',
 			'Baker County',
 			'Baldwin County',
@@ -3054,8 +3055,7 @@ export const usaStates: IUSAState[] = [
 		population: {
 			year: 2018,
 			count: 21503
-		},
-		counties: ['']
+		}
 	},
 	{
 		name: 'Pennsylvania',
