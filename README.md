@@ -28,6 +28,19 @@ This package contains geographical data for all USA states including:
     -   `count`: the actual population
 -   `counties` of the state
 
+**NB**
+There is no counties information for the following US overseas territories:
+
+-   American Samoa
+-   Federated States Of Micronesia
+-   Marshall Islands
+-   Northern Mariana Islands
+-   Palau
+-   Puerto Rico
+-   Virgin Islands
+
+If you happen to have any knowledge on the matter, please consider contributing!
+
 ## Usage
 
 ```sh
