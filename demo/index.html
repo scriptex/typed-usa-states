@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Typed USA States</title>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"
+			integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg=="
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div id="result"></div>
+		<script>
+			require(['../dist/index.js'], function (lib) {
+				var html = '';
+
+				console.log(lib.usaCities);
+				console.log(lib.usaStates);
+				console.log(lib.usaStatesFull);
+				console.log(lib.usaStatesWithArea);
+				console.log(lib.usaStatesWithCounties);
+				console.log(lib.usaStatesWithPopuation);
+				console.log(lib.usaStatesWithZipCodes);
+
+				Object.keys(lib).forEach(function (key) {
+					html += key + ': ' + lib[key].length + ' items<br>';
+				});
+
+				document.getElementById('result').innerHTML = html;
+			});
+		</script>
+	</body>
+</html>

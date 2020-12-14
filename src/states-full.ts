@@ -1,30 +1,6 @@
-export type IUSAZipCode = string;
+import { IUSAState } from './typings';
 
-export type IUSAZipCodeRange = [IUSAZipCode, IUSAZipCode];
-
-export interface IUSAStateArea {
-	year: number;
-	value: number; // in square miles
-}
-
-export interface IUSAStatePopulation {
-	year: number;
-	count: number;
-}
-
-export interface IUSAState {
-	name: string;
-	abbreviation: string;
-	territory: boolean;
-	capital: string;
-	contiguous: boolean;
-	zipCodes: IUSAZipCodeRange[];
-	area: IUSAStateArea;
-	population: IUSAStatePopulation;
-	counties?: string[];
-}
-
-export const usaStates: IUSAState[] = [
+export const usaStatesFull: IUSAState[] = [
 	{
 		name: 'Alabama',
 		abbreviation: 'AL',

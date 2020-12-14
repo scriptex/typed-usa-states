@@ -41,7 +41,22 @@ There is no counties information for the following US overseas territories:
 
 If you happen to have any knowledge on the matter, please consider contributing!
 
-## Usage
+### Cities
+
+This package provides data for all cities in the US.
+
+You can use this by importing the cities array:
+
+```javascript
+import { usaCities } from 'typed-usa-states';
+```
+
+Each city object contains the following data:
+
+-   `name`: the name of the city
+-   `state`: the state which the city belongs to
+
+## Installation
 
 ```sh
 npm i typed-usa-states
@@ -53,8 +68,165 @@ yarn add typed-usa-states
 
 ## Usage
 
-```javascript
+Since the size of the array is pretty big, you can choose which states data to import in your application.
+
+There are several predefined exported arrays with data for the states.
+
+Their content's schema is explained below:
+
+### Import the full states data
+
+```typescript
+import { usaStatesFull } from 'typed-usa-states';
+```
+
+Schema:
+
+```
+{
+	name: string,
+	abbreviation: string,
+	territory: boolean,
+	capital: string,
+	contiguous: boolean,
+	zipCodes: [string, string][],
+	area: {
+		year: number,
+		value: number
+	},
+	population: {
+		year: number,
+		count: number
+	},
+	counties: string[]
+}
+```
+
+---
+
+### Import only the required data
+
+```typescript
 import { usaStates } from 'typed-usa-states';
+```
+
+Schema:
+
+```
+{
+	name: string,
+	abbreviation: string,
+	territory: boolean,
+	capital: string,
+	contiguous: boolean
+}
+```
+
+---
+
+### Import the required and area data
+
+```typescript
+import { usaStatesWithArea } from 'typed-usa-states';
+```
+
+Schema:
+
+```
+{
+	name: string,
+	abbreviation: string,
+	territory: boolean,
+	capital: string,
+	contiguous: boolean,
+	area: {
+		year: number,
+		value: number
+	}
+}
+```
+
+---
+
+### Import the required and counties data
+
+```typescript
+import { usaStatesWithCounties } from 'typed-usa-states';
+```
+
+Schema:
+
+```
+{
+	name: string,
+	abbreviation: string,
+	territory: boolean,
+	capital: string,
+	contiguous: boolean,
+	counties: string[]
+}
+```
+
+---
+
+### Import the requied and population data
+
+```typescript
+import { usaStatesWithPopulation } from 'typed-usa-states';
+```
+
+Schema:
+
+```
+{
+	name: string,
+	abbreviation: string,
+	territory: boolean,
+	capital: string,
+	contiguous: boolean,
+	population: {
+		year: number,
+		count: number
+	}
+}
+```
+
+---
+
+### Import the required and zipcode data
+
+```typescript
+import { usaStatesWithZipCodes } from 'typed-usa-states';
+```
+
+Schema:
+
+```
+{
+	name: string,
+	abbreviation: string,
+	territory: boolean,
+	capital: string,
+	contiguous: boolean,
+	zipCodes: [string, string][]
+}
+```
+
+---
+
+### Import the cities data
+
+```typescript
+import { usaCities } from 'typed-usa-states';
+```
+
+Schema:
+
+```
+{
+	city: string;
+	state: string;
+}
 ```
 
 ## Typings
