@@ -35,6 +35,7 @@ yarn.lock
 .prettierignore
 
 # Config files
+.github
 .babelrc
 .whitesource
 renovate.json
