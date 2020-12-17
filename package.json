@@ -20,6 +20,12 @@
 		"Geographical Data"
 	],
 	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
+	"contributors": [
+		{
+			"name": "Alexander Panayotov",
+			"email": "alexander.panayotov@gmail.com"
+		}
+	],
 	"repository": "https://github.com/scriptex/typed-usa-states",
 	"bugs": {
 		"url": "https://github.com/scriptex/typed-usa-states/issues",
