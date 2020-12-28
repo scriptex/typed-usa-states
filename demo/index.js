@@ -4,7 +4,7 @@ const {
 	usaStatesFull,
 	usaStatesWithArea,
 	usaStatesWithCounties,
-	usaStatesWithPopuation,
+	usaStatesWithPopulation,
 	usaStatesWithZipCodes
 } = require('../dist');
 
@@ -14,6 +14,6 @@ console.log({
 	usaStatesFull,
 	usaStatesWithArea,
 	usaStatesWithCounties,
-	usaStatesWithPopuation,
+	usaStatesWithPopulation,
 	usaStatesWithZipCodes
 });

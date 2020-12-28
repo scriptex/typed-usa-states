@@ -229,6 +229,12 @@ Schema:
 }
 ```
 
+## Usage in browser
+
+You can use the module directly in the browser (without any module bundler such as Webpack or Parcel) but you will need to include `requirejs`.
+
+The usage is not so straight-forward, so please refer to the [demo](https://github.com/scriptex/typed-usa-states/blob/master/demo/index.html)
+
 ## Typings
 
 The package exports several types which can be used in TypeScript environment.

@@ -4,6 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Typed USA States</title>
+
+		<!-- Include the Require JS library from CDNJS -->
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"
 			integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg=="
@@ -13,19 +15,33 @@
 	<body>
 		<div id="result"></div>
 		<script>
-			require(['../dist/index.js'], function (lib) {
+			// This is the most important part
+			var exports = {};
+
+			// Require the needed files
+			require([
+				'../dist/cities.js',
+				'../dist/states-full.js',
+				'../dist/states-with-area.js',
+				'../dist/states-with-counties.js',
+				'../dist/states-with-population.js',
+				'../dist/states-with-zipcodes.js',
+				'../dist/states.js'
+			], function () {
 				var html = '';
 
-				console.log(lib.usaCities);
-				console.log(lib.usaStates);
-				console.log(lib.usaStatesFull);
-				console.log(lib.usaStatesWithArea);
-				console.log(lib.usaStatesWithCounties);
-				console.log(lib.usaStatesWithPopuation);
-				console.log(lib.usaStatesWithZipCodes);
+				// The exports object from above gets populated
 
-				Object.keys(lib).forEach(function (key) {
-					html += key + ': ' + lib[key].length + ' items<br>';
+				console.log(exports.usaCities);
+				console.log(exports.usaStates);
+				console.log(exports.usaStatesFull);
+				console.log(exports.usaStatesWithArea);
+				console.log(exports.usaStatesWithCounties);
+				console.log(exports.usaStatesWithPopulation);
+				console.log(exports.usaStatesWithZipCodes);
+
+				Object.keys(exports).forEach(function (key) {
+					html += key + ': ' + exports[key].length + ' items<br>';
 				});
 
 				document.getElementById('result').innerHTML = html;
