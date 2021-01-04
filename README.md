@@ -235,6 +235,39 @@ You can use the module directly in the browser (without any module bundler such 
 
 The usage is not so straight-forward, so please refer to the [demo](https://github.com/scriptex/typed-usa-states/blob/master/demo/index.html)
 
+## Module bundlers
+
+`typed-usa-states` exposes several pretty large arrays. 
+
+It is possible that you experience issues with insufficient memory when using `create-react-app` or Webpack, Parcel, Rollup, etc. or if you are using the package in Docker or other CI environment.
+
+In this case you might want to import the required array directly instead of relying on the module bunlder to resolve it for you.
+
+This means that you need to change your code like this:
+
+```diff
+- import { usaStates } from 'typed-usa-states';
++ import { usaStates } from 'typed-usa-states/dist/states';
+
+- import { usaCities } from 'typed-usa-states';
++ import { usaCities } from 'typed-usa-states/dist/cities';
+
+- import { usaStatesFull } from 'typed-usa-states';
++ import { usaStatesFull } from 'typed-usa-states/dist/states-full';
+
+- import { usaStatesWithArea } from 'typed-usa-states';
++ import { usaStatesWithArea } from 'typed-usa-states/dist/states-with-area';
+
+- import { usaStatesWithCounties } from 'typed-usa-states';
++ import { usaStatesWithCounties } from 'typed-usa-states/dist/states-with-counties';
+
+- import { usaStatesWithPopulation } from 'typed-usa-states';
++ import { usaStatesWithPopulation } from 'typed-usa-states/dist/states-with-population';
+
+- import { usaStatesWithZipCodes } from 'typed-usa-states';
++ import { usaStatesWithZipCodes } from 'typed-usa-states/dist/states-with-zipcodes';
+```
+
 ## Typings
 
 The package exports several types which can be used in TypeScript environment.
