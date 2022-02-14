@@ -86,14 +86,6 @@ export const usaStatesWithZipCodes: IUSAState[] = [
 		zipCodes: [['20001', '20020']]
 	},
 	{
-		name: 'Federated States Of Micronesia',
-		abbreviation: 'FM',
-		territory: true,
-		capital: 'Palikir',
-		contiguous: false,
-		zipCodes: [['96941', '96944']]
-	},
-	{
 		name: 'Florida',
 		abbreviation: 'FL',
 		territory: false,
@@ -198,17 +190,6 @@ export const usaStatesWithZipCodes: IUSAState[] = [
 		capital: 'Augusta',
 		contiguous: true,
 		zipCodes: [['04032', '04034']]
-	},
-	{
-		name: 'Marshall Islands',
-		abbreviation: 'MH',
-		territory: true,
-		capital: 'Majuro',
-		contiguous: false,
-		zipCodes: [
-			['96960', '96960'],
-			['96970', '96970']
-		]
 	},
 	{
 		name: 'Maryland',
@@ -364,14 +345,6 @@ export const usaStatesWithZipCodes: IUSAState[] = [
 		capital: 'Salem',
 		contiguous: true,
 		zipCodes: [['97201', '97225']]
-	},
-	{
-		name: 'Palau',
-		abbreviation: 'PW',
-		territory: true,
-		capital: 'Ngerulmud',
-		contiguous: false,
-		zipCodes: [['96939', '96940']]
 	},
 	{
 		name: 'Pennsylvania',

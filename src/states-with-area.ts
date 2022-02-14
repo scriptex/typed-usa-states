@@ -112,17 +112,6 @@ export const usaStatesWithArea: IUSAState[] = [
 		}
 	},
 	{
-		name: 'Federated States Of Micronesia',
-		abbreviation: 'FM',
-		territory: true,
-		capital: 'Palikir',
-		contiguous: false,
-		area: {
-			year: 2019,
-			value: 271
-		}
-	},
-	{
 		name: 'Florida',
 		abbreviation: 'FL',
 		territory: false,
@@ -252,17 +241,6 @@ export const usaStatesWithArea: IUSAState[] = [
 		area: {
 			year: 2019,
 			value: 35385
-		}
-	},
-	{
-		name: 'Marshall Islands',
-		abbreviation: 'MH',
-		territory: true,
-		capital: 'Majuro',
-		contiguous: false,
-		area: {
-			year: 2019,
-			value: 70
 		}
 	},
 	{
@@ -472,17 +450,6 @@ export const usaStatesWithArea: IUSAState[] = [
 		area: {
 			year: 2019,
 			value: 98466.1
-		}
-	},
-	{
-		name: 'Palau',
-		abbreviation: 'PW',
-		territory: true,
-		capital: 'Ngerulmud',
-		contiguous: false,
-		area: {
-			year: 2019,
-			value: 177.2
 		}
 	},
 	{

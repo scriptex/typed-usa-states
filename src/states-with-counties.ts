@@ -404,13 +404,6 @@ export const usaStatesWithCounties: IUSAState[] = [
 		counties: ['District of Columbia']
 	},
 	{
-		name: 'Federated States Of Micronesia',
-		abbreviation: 'FM',
-		territory: true,
-		capital: 'Palikir',
-		contiguous: false
-	},
-	{
 		name: 'Florida',
 		abbreviation: 'FL',
 		territory: false,
@@ -1382,13 +1375,6 @@ export const usaStatesWithCounties: IUSAState[] = [
 			'Washington County',
 			'York County'
 		]
-	},
-	{
-		name: 'Marshall Islands',
-		abbreviation: 'MH',
-		territory: true,
-		capital: 'Majuro',
-		contiguous: false
 	},
 	{
 		name: 'Maryland',
@@ -2609,13 +2595,6 @@ export const usaStatesWithCounties: IUSAState[] = [
 			'Wheeler County',
 			'Yamhill County'
 		]
-	},
-	{
-		name: 'Palau',
-		abbreviation: 'PW',
-		territory: true,
-		capital: 'Ngerulmud',
-		contiguous: false
 	},
 	{
 		name: 'Pennsylvania',

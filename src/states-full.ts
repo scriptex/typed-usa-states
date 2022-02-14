@@ -498,22 +498,6 @@ export const usaStatesFull: IUSAState[] = [
 		counties: ['District of Columbia']
 	},
 	{
-		name: 'Federated States Of Micronesia',
-		abbreviation: 'FM',
-		territory: true,
-		capital: 'Palikir',
-		contiguous: false,
-		zipCodes: [['96941', '96944']],
-		area: {
-			year: 2019,
-			value: 271
-		},
-		population: {
-			year: 2018,
-			count: 114079
-		}
-	},
-	{
 		name: 'Florida',
 		abbreviation: 'FL',
 		territory: false,
@@ -1603,25 +1587,6 @@ export const usaStatesFull: IUSAState[] = [
 			'Washington County',
 			'York County'
 		]
-	},
-	{
-		name: 'Marshall Islands',
-		abbreviation: 'MH',
-		territory: true,
-		capital: 'Majuro',
-		contiguous: false,
-		zipCodes: [
-			['96960', '96960'],
-			['96970', '96970']
-		],
-		area: {
-			year: 2019,
-			value: 70
-		},
-		population: {
-			year: 2018,
-			count: 58791
-		}
 	},
 	{
 		name: 'Maryland',
@@ -3016,22 +2981,6 @@ export const usaStatesFull: IUSAState[] = [
 			'Wheeler County',
 			'Yamhill County'
 		]
-	},
-	{
-		name: 'Palau',
-		abbreviation: 'PW',
-		territory: true,
-		capital: 'Ngerulmud',
-		contiguous: false,
-		zipCodes: [['96939', '96940']],
-		area: {
-			year: 2019,
-			value: 177.2
-		},
-		population: {
-			year: 2018,
-			count: 21503
-		}
 	},
 	{
 		name: 'Pennsylvania',

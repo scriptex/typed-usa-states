@@ -72,13 +72,6 @@ export const usaStates: IUSAState[] = [
 		contiguous: true
 	},
 	{
-		name: 'Federated States Of Micronesia',
-		abbreviation: 'FM',
-		territory: true,
-		capital: 'Palikir',
-		contiguous: false
-	},
-	{
 		name: 'Florida',
 		abbreviation: 'FL',
 		territory: false,
@@ -161,13 +154,6 @@ export const usaStates: IUSAState[] = [
 		territory: false,
 		capital: 'Augusta',
 		contiguous: true
-	},
-	{
-		name: 'Marshall Islands',
-		abbreviation: 'MH',
-		territory: true,
-		capital: 'Majuro',
-		contiguous: false
 	},
 	{
 		name: 'Maryland',
@@ -301,13 +287,6 @@ export const usaStates: IUSAState[] = [
 		territory: false,
 		capital: 'Salem',
 		contiguous: true
-	},
-	{
-		name: 'Palau',
-		abbreviation: 'PW',
-		territory: true,
-		capital: 'Ngerulmud',
-		contiguous: false
 	},
 	{
 		name: 'Pennsylvania',
