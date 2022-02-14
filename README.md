@@ -32,10 +32,7 @@ This package contains geographical data for all USA states including:
 There is no counties information for the following US overseas territories:
 
 -   American Samoa
--   Federated States Of Micronesia
--   Marshall Islands
 -   Northern Mariana Islands
--   Palau
 -   Puerto Rico
 -   Virgin Islands
 
@@ -237,7 +234,7 @@ The usage is not so straight-forward, so please refer to the [demo](https://gith
 
 ## Module bundlers
 
-`typed-usa-states` exposes several pretty large arrays. 
+`typed-usa-states` exposes several pretty large arrays.
 
 It is possible that you experience issues with insufficient memory when using `create-react-app` or Webpack, Parcel, Rollup, etc. or if you are using the package in Docker or other CI environment.
 

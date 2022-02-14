@@ -112,17 +112,6 @@ export const usaStatesWithPopulation: IUSAState[] = [
 		}
 	},
 	{
-		name: 'Federated States Of Micronesia',
-		abbreviation: 'FM',
-		territory: true,
-		capital: 'Palikir',
-		contiguous: false,
-		population: {
-			year: 2018,
-			count: 114079
-		}
-	},
-	{
 		name: 'Florida',
 		abbreviation: 'FL',
 		territory: false,
@@ -252,17 +241,6 @@ export const usaStatesWithPopulation: IUSAState[] = [
 		population: {
 			year: 2018,
 			count: 1338404
-		}
-	},
-	{
-		name: 'Marshall Islands',
-		abbreviation: 'MH',
-		territory: true,
-		capital: 'Majuro',
-		contiguous: false,
-		population: {
-			year: 2018,
-			count: 58791
 		}
 	},
 	{
@@ -472,17 +450,6 @@ export const usaStatesWithPopulation: IUSAState[] = [
 		population: {
 			year: 2018,
 			count: 4190713
-		}
-	},
-	{
-		name: 'Palau',
-		abbreviation: 'PW',
-		territory: true,
-		capital: 'Ngerulmud',
-		contiguous: false,
-		population: {
-			year: 2018,
-			count: 21503
 		}
 	},
 	{
