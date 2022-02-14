@@ -35,8 +35,10 @@ yarn.lock
 .prettierignore
 
 # Config files
-.github
 .babelrc
+.eslintrc
+.github
+.nvmrc
 .whitesource
 renovate.json
 tslint.json
@@ -47,3 +49,4 @@ _config.yml
 _.config.yml
 
 # Project specific
+bin
