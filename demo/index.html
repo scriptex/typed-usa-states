@@ -3,33 +3,124 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Typed USA States</title>
 
-		<!-- Include the Require JS library from CDNJS -->
+		<title>Typed USA States | Demo</title>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css"
+		/>
+
 		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"
-			integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg=="
+			src="https://unpkg.com/requirejs"
+			integrity="sha384-9M3Wd+wRkBqNHxK8F7Wg3Xs1Du/JXnCXgVdJ+G6KkYBvGol8vSgEiBdd8+MTaYtk"
 			crossorigin="anonymous"
 		></script>
+
+		<script
+			src="https://unpkg.com/scriptex-socials"
+			async
+			integrity="sha384-FDS8WECJvE4bGb+arLPh3DSv0mrVHD+hJRf+UaM6rVMT+wBleSgUlog90rrtgHH1"
+			crossorigin="anonymous"
+		></script>
+
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			html,
+			body,
+			main {
+				height: 100%;
+			}
+
+			body {
+				font-family: sans-serif;
+				font-size: 0.875rem;
+				line-height: 1.25;
+				text-align: center;
+				margin: 0;
+			}
+
+			h1,
+			h2 {
+				margin: 0 0 1rem;
+			}
+
+			main {
+				padding: 1rem 0.5rem;
+			}
+
+			.result {
+				width: 100%;
+				height: calc(100% - 5rem);
+				display: flex;
+				flex-flow: row nowrap;
+				overflow: auto;
+			}
+
+			.result div {
+				max-width: calc(100% / 3);
+				height: 100%;
+				flex: 0 0 calc(100% / 3);
+				padding: 0 0.5rem;
+			}
+
+			.result pre {
+				text-align: left;
+				height: calc(100% - 2.640625rem);
+				padding: 1rem;
+				overflow: auto;
+				background-color: #ccc;
+			}
+
+			@media (max-width: 1199px) {
+				.result div {
+					max-width: 50%;
+					flex: 0 0 50%;
+				}
+			}
+
+			@media (max-width: 767px) {
+				.result div {
+					max-width: 75vw;
+					flex: 0 0 75vw;
+				}
+			}
+		</style>
 	</head>
 	<body>
-		<div id="result"></div>
+		<main>
+			<a
+				href="https://github.com/scriptex/typed-usa-states"
+				title="See code on Github"
+				class="github-fork-ribbon"
+				data-ribbon="See code on Github"
+			>
+				See code on Github
+			</a>
+
+			<h1>Typed USA States</h1>
+
+			<div id="result" class="result"></div>
+
+			<social-links></social-links>
+		</main>
+
 		<script>
-			// This is the most important part
+			var html = '';
 			var exports = {};
 
-			// Require the needed files
 			require([
-				'../dist/cities.js',
-				'../dist/states-full.js',
-				'../dist/states-with-area.js',
-				'../dist/states-with-counties.js',
-				'../dist/states-with-population.js',
-				'../dist/states-with-zipcodes.js',
-				'../dist/states.js'
+				'./dist/cities.js',
+				'./dist/states-full.js',
+				'./dist/states-with-area.js',
+				'./dist/states-with-counties.js',
+				'./dist/states-with-population.js',
+				'./dist/states-with-zipcodes.js',
+				'./dist/states.js'
 			], function () {
-				var html = '';
-
 				// The exports object from above gets populated
 
 				console.log(exports.usaCities);
@@ -41,7 +132,11 @@
 				console.log(exports.usaStatesWithZipCodes);
 
 				Object.keys(exports).forEach(function (key) {
-					html += key + ': ' + exports[key].length + ' items<br>';
+					const title = '<h2>' + key + '</h2>';
+					const content = '<pre><code>' + JSON.stringify(exports[key], null, 2) + '</code></pre>';
+					const markup = '<div>' + title + content + '</div>';
+
+					html += markup;
 				});
 
 				document.getElementById('result').innerHTML = html;
