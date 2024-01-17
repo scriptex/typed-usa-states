@@ -47,7 +47,7 @@
 		"@typescript-eslint/parser": "6.19.0",
 		"eslint": "8.56.0",
 		"eslint-config-prettier": "9.1.0",
-		"prettier": "3.2.3",
+		"prettier": "3.2.4",
 		"terser": "5.26.0",
 		"ts-node": "10.9.2",
 		"typescript": "5.3.3"
