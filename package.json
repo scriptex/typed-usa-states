@@ -17,12 +17,6 @@
 	},
 	"license": "MIT",
 	"author": "Atanas Atanasov <hi@atanas.info> (https://atanas.info)",
-	"contributors": [
-		{
-			"name": "Alexander Panayotov",
-			"email": "alexander.panayotov@gmail.com"
-		}
-	],
 	"funding": "https://github.com/sponsors/scriptex",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -37,7 +31,7 @@
 		"minify": "./bin/minify.sh dist",
 		"clean": "rm -rf dist && rm -rf demo/dist",
 		"build": "yarn clean && yarn generate && yarn tsc && yarn prettier && yarn minify && yarn copy",
-		"lint": "eslint 'src/**/*.ts'",
+		"lint": "eslint",
 		"copy": "cp -r dist demo/dist"
 	},
 	"dependencies": {},
@@ -45,7 +39,7 @@
 		"@types/node": "20.12.7",
 		"@typescript-eslint/eslint-plugin": "7.6.0",
 		"@typescript-eslint/parser": "7.6.0",
-		"eslint": "8.57.0",
+		"eslint": "9.0.0",
 		"eslint-config-prettier": "9.1.0",
 		"prettier": "3.2.5",
 		"terser": "5.30.3",
