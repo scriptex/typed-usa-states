@@ -36,13 +36,13 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@types/node": "22.13.1",
+		"@types/node": "22.13.4",
 		"@typescript-eslint/eslint-plugin": "8.23.0",
 		"@typescript-eslint/parser": "8.23.0",
 		"eslint": "9.19.0",
 		"eslint-config-prettier": "10.0.1",
 		"prettier": "3.4.2",
-		"terser": "5.38.0",
+		"terser": "5.38.2",
 		"ts-node": "10.9.2",
 		"typescript": "5.7.3"
 	}
